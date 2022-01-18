@@ -1,0 +1,183 @@
+
+            * { margin: 0; padding: 0; }
+
+            html, body {
+                width: 100%;
+                height: 100%;
+            }
+
+            @font-face {
+                font-family: 'Paprika';
+                src: url('../../ttf/210\ 파프리카B.ttf');
+            }
+            @font-face {
+                font-family: 'NamugulimB';
+                src: url('../../ttf/210\ 나무굴림B.ttf');
+            }
+            @font-face {
+                font-family: 'NamugulimR';
+                src: url('../../ttf/210\ 나무굴림R.ttf');
+            }
+            @font-face {
+                font-family: 'NamugodicB';
+                src: url('../../ttf/210\ 나무고딕B.ttf');
+            }
+            @font-face {
+                font-family: 'NamugodicR';
+                src: url('../../ttf/210\ 나무고딕R.ttf');
+            }
+            @font-face {
+                font-family: 'NanumgodicB';
+                src: url('../ttf/NanumGothic-Bold.ttf')
+            }
+
+            .topArea {
+                padding-top: 8vw;
+                margin: 0px 10%;
+            }
+            .imageBox {
+            }
+            .subArea {
+                width: 100%;
+                height: 9vw;
+                margin-top: 2vw;
+            }
+            .subBox {
+                position: absolute;
+                left: 50%;
+                -webkit-transform: translate(-50%, 0);
+                width: 50vw;
+                height: 3vw;
+                border-style: solid;
+                border-color: #90a4ae;
+                border-width: 0.5vw;
+                border-top: hidden;
+            }
+            .subBox p {
+                font-size: 1.5vw;
+                font-family: 'NanumgodicB';
+                line-height: 2;
+                margin-left: 3.3vw;
+            }
+            .roadArea { 
+                width: 65%;
+                height: 16vw;
+                margin-top: 3vw;
+                margin-left: 22%;
+            }
+            /*.iconBox {
+                position: absolute;
+                left: 50%;
+                -webkit-transform: translate(-50%, 0)
+                position: relative;
+                left: 30%; 
+            } */
+            .iconBox p {
+                font-family: 'Paprika';
+                font-size: 3vw;
+                color: #5b914e;
+                text-shadow: 3px 3px #f9f2d6;
+                font-weight: 500;
+                margin-bottom: 2vw;
+            }
+            .iconBox2 p {
+                font-family: 'Paprika';
+                font-size: 3vw;
+                color: #106735;
+                text-shadow: 3px 3px #f9f2d6;
+                font-weight: 500;
+                margin-bottom: 2vw;
+            }
+            .roadIcon {
+                width: 4.3vw;
+                height: 4.3vw;
+                border-radius: 50%;
+                background-color: rgb(109, 66, 89);
+                float: left; 
+            }
+            .infoIcon {
+                width: 4.5vw;
+                height: 1.6vw;
+                border-radius: 2em;
+                background-color: rgb(130, 99, 141);
+                margin: 0 1.7vw;
+                color: white;
+                font-size: 1.5vw;
+                text-align: center;
+                line-height: 1.6vw;
+                display: inline-block;
+                font-family: NamugodicR;
+            }
+            .line {
+                width: 80%;
+                height: 0.2vw;
+                background-color: #106735;
+                position: absolute;
+                left: 50%;
+                -webkit-transform: translate(-50%, 0);
+                margin-bottom: 10px;
+            }
+            .roadArea2 { 
+                width: 65%;
+                height: 18vw;
+                margin-top: 3vw;
+                margin-left: 22%;
+                padding-bottom: 3vw;
+            }
+            /*.iconBox2 {
+                position: relative;
+                left: 30%; 
+            } */
+            .roadIcon2 {
+                width: 4.3vw;
+                height: 4.3vw;
+                border-radius: 50%;
+                background-color: rgb(109, 66, 89);
+                float: left;
+                margin-top: 2.3vw;
+            }
+            .bboxArea {
+                width: 100%;
+                height: 11vw;
+                padding-bottom: 8vw;
+            }
+            .bBox {
+                width: 37vw;
+                height: 6vw;
+                background-color: #106735;
+                border-radius: 1.4vw;
+                margin-top: 5vw;
+                position: absolute;
+                left: 50%;
+                -webkit-transform: translate(-50%, 0);
+                font-family: Paprika;
+            }
+            .bbT1 {
+                text-align: center;
+                font-size: 2.9vw;
+                color: white;
+                line-height: 3.3vw;  
+            }
+            .bbT2 {
+                text-align: center;
+                font-size : 1vw;
+                color: white;
+                margin-top: 0.3vw;
+                font-family: 'NanumgodicB'
+            
+            }
+            .infoicon_wrap{
+                font-family: 'NamugodicB';
+                font-size: 1.5vw;
+                padding-left: 5.5vw;
+            }
+	        .car {
+		        position: absolute;
+		        margin: 0.6vw;
+		        color: white;
+	        }
+	        .bus {
+		        position: absolute;
+		        margin: 0.6vw;
+		        color: white;
+            }

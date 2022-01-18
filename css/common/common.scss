@@ -1,0 +1,59 @@
+// 폰트 불러오기  꼭 해줘야함
+@font-face {
+    font-family: 'Paprika';
+    src: url('../../ttf/210\ 파프리카B.ttf');
+}
+@font-face {
+    font-family: 'NamugulimB';
+    src: url('../../ttf/210\ 나무굴림B.ttf');
+}
+@font-face {
+    font-family: 'NamugulimR';
+    src: url('../../ttf/210\ 나무굴림R.ttf');
+}
+@font-face {
+    font-family: 'NamugodicB';
+    src: url('../../ttf/210\ 나무고딕B.ttf');
+}
+@font-face {
+    font-family: 'NamugodicR';
+    src: url('../../ttf/210\ 나무고딕R.ttf');
+}
+
+$pap: 'Paprika';
+$ngB : 'NamugulimB';
+$ngR : 'NamugulimR';
+$ndicB : 'NamugodicB';
+$ndicR : 'NamugodicR';
+
+
+$none_style : none;
+
+$white :  #f9f2d6;
+$green : #5b914e;
+$udgreen : #106735;
+$black : #333333;
+$puple1 : #8E44AD;
+$puple2 : #9C7DB8;
+$puple3 : rgba(124, 74, 165, 0.5);
+$yellow : #ead371;
+$brown : #765c4d;
+$mainShadowGreen : 0 0.3vw $udgreen;
+
+$t_c : center;
+$d_b : block;
+$d_ib : inline-block;
+
+// common
+.t_c { text-align: $t_c;}
+.f_l {float: left;}
+.f_r {float: right;}
+.d_n{display: none;}
+.text_white{color: $white;}
+.mgL_150{margin-left: 150px;}
+.mgR_150{margin-right: 150px;}
+.mgR_50{margin-right: 50px;}
+.bg_white {background-color: $white;}
+address{ font-style: normal;}
+// 드래그방지
+.no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}

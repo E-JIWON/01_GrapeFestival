@@ -1,0 +1,114 @@
+
+* { margin: 0; padding: 0;}
+html, body {
+    width: 100%;
+    height:100%;
+}
+@font-face {
+    font-family: 'NamugodicB';
+    src: url('../ttf/210\ 나무고딕B.ttf');
+}
+@font-face {
+    font-family: 'Paprika';
+    src: url('../ttf/210\ 파프리카B.ttf');
+}
+@font-face {
+    font-family: 'NamugulimR';
+    src: url('../ttf/210\ 나무굴림R.ttf');
+}
+@font-face {
+    font-family: 'NamugodicR';
+    src: url('../ttf/210\ 나무고딕R.ttf');
+}
+.topArea{
+    height: 39vw;
+    padding-top: 8vw;
+    margin: 0px 10%;
+}
+/*.topBox {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+}*/
+
+.topBox img {
+    width: 40vw;
+    height: 23vw;
+    float: left;
+    display: inline-block;
+    z-index: 100;
+}
+.shadowBox {
+    width: 41.5vw;
+    height: 24.5vw;
+    background-color: rgb(130, 99, 141);
+    box-shadow: 20px 20px rgb(78, 51, 88);
+    margin-left: 36vw;
+    margin-top: 7.4vw;
+    z-index: -1;
+    position: absolute;
+}
+.tT1 {
+    font-size: 3.7vw;
+    color: white;
+    margin-left: 5.2vw;
+    line-height: 7vw;
+    font-family: Paprika;
+    text-shadow: 0.4vw 0.4vw slategrey;
+}
+.tT2 {
+    font-size: 1.6vw;
+    color: #ffe20e;
+    margin-top: 0.7vw;
+    margin-left: 5.2vw;
+    font-family: NamugulimR;
+}
+.tT3 {
+    font-size: 1.6vw;
+    color: white;
+    margin-top: 1.5vw;
+    margin-left: 5.2vw;
+    font-family: NamugulimR;
+    line-height: 2.6vw;
+}
+.textArea {
+    width: 100%;
+    height: 29vw;
+}
+.textArea div {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+}
+.textArea h1 {
+    font-size: 4vw;
+    text-align: center;
+    color: #333333;
+    text-shadow: 0.4vw 0.4vw #f9f2d6;
+    font-family: NamugodicB;
+}
+.textArea p {
+    font-size: 1.6vw;
+    text-align: center;
+    margin-top: 3vw;
+    font-family: NamugodicR;
+    line-height: 2;
+}
+.videoArea {
+    width: 100%;
+    padding-bottom: 8vw;
+}
+.videoArea div {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    width: 80%;
+}
+.videoArea h1 {
+    text-align: center;
+    color: rgba(124, 74, 165);
+    font-size: 4vw;
+    text-shadow: 5px 5px rgba(124, 74, 165, 0.5);
+    margin-bottom: 2vh;
+    font-family: Paprika;
+}

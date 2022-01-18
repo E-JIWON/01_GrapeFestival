@@ -1,0 +1,193 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Paprika';
+  src: url("../../ttf/210 파프리카B.ttf");
+}
+
+@font-face {
+  font-family: 'NamugulimB';
+  src: url("../../ttf/210 나무굴림B.ttf");
+}
+
+@font-face {
+  font-family: 'NamugulimR';
+  src: url("../../ttf/210 나무굴림R.ttf");
+}
+
+@font-face {
+  font-family: 'NamugodicB';
+  src: url("../../ttf/210 나무고딕B.ttf");
+}
+
+@font-face {
+  font-family: 'NamugodicR';
+  src: url("../../ttf/210 나무고딕R.ttf");
+}
+
+.t_c {
+  text-align: center;
+}
+
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+}
+
+.d_n {
+  display: none;
+}
+
+.text_white {
+  color: #f9f2d6;
+}
+
+.mgL_150 {
+  margin-left: 150px;
+}
+
+.mgR_150 {
+  margin-right: 150px;
+}
+
+.mgR_50 {
+  margin-right: 50px;
+}
+
+.bg_white {
+  background-color: #f9f2d6;
+}
+
+address {
+  font-style: normal;
+}
+
+.no-drag {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* 메인 */
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .subHeaderWrap {
+  width: 100%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Paprika";
+}
+
+header .subHeaderWrap .header_mu {
+  padding: 50px;
+  padding-bottom: 0px;
+}
+
+header .subHeaderWrap .header_mu .img_wrap {
+  display: inline-block;
+  width: 15%;
+}
+
+header .subHeaderWrap .header_mu .img_wrap a img {
+  width: 11vw;
+  height: auto;
+}
+
+header .subHeaderWrap .header_mu .sub_manu {
+  float: right;
+  color: #f9f2d6;
+  font-size: 45px;
+  display: inline-block;
+  list-style: none;
+}
+
+header .subHeaderWrap .header_mu .sub_manu .sub_manu_1 {
+  margin-right: 50px;
+}
+
+header .subHeaderWrap .header_mu .sub_manu .sub_manu_2 {
+  margin-right: 50px;
+}
+
+header .subHeaderWrap .header_mu .sub_manu .hover_event {
+  text-transform: uppercase;
+}
+
+header .subHeaderWrap .header_mu .sub_manu li {
+  float: left;
+}
+
+header .subHeaderWrap .header_mu .sub_manu li a {
+  text-decoration: none;
+  color: #f9f2d6;
+}
+
+header .subHeaderWrap .header_mu .sub_manu li ul {
+  display: none;
+  position: absolute;
+  width: 150px;
+}
+
+header .subHeaderWrap .header_mu .sub_manu li ul a {
+  text-decoration: none;
+  color: #f9f2d6;
+}
+
+header .subHeaderWrap .header_mu .sub_manu li ul a li {
+  position: relative;
+  top: 15px;
+  width: 180px;
+  height: 50px;
+  margin-left: -25px;
+  line-height: 52px;
+  list-style: none;
+  text-align: center;
+  float: left;
+  font-size: 0.4em;
+  font-weight: 200;
+  background-color: #82638d;
+  border: 0.1px solid #f9f2d6;
+  font-family: "NamugodicB";
+}
+
+header .subHeaderWrap .header_mu .sub_manu li ul a:hover {
+  color: #82638d;
+}
+
+header .subHeaderWrap .header_mu .sub_manu li ul a:hover li {
+  background-color: #f9f2d6;
+  font-weight: 800;
+  text-shadow: none;
+}
+
+header .subHeaderWrap .header_mu .sub_manu_title:hover {
+  cursor: pointer;
+  text-shadow: 2px 2px #4e3358;
+  padding-bottom: 4px;
+  border-bottom: 5px solid #f9f2d6;
+}
+
+header .subHeaderWrap .header_mu .sub_manu_title:hover .sub_sub_manu {
+  display: block;
+}
+
+.sub_title {
+  font-family: "NamugodicB";
+  font-size: 70px;
+  width: 500px;
+  height: 80px;
+  position: absolute;
+  top: 280px;
+  left: 50%;
+  margin-left: -250px;
+  color: white;
+  text-align: center;
+  line-height: 78px;
+}
+/*# sourceMappingURL=header.css.map */

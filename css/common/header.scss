@@ -1,0 +1,111 @@
+@import "./common.scss";
+
+/* 메인 */
+header{
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .subHeaderWrap {
+        width: 100%;
+        height: 400px;
+        background-color: rgba(0,0,0,0.5);
+        font-family: $pap;
+    
+        // 탑 메뉴
+        .header_mu { 
+            padding: 50px;
+            padding-bottom: 0px;
+            
+            // 로고
+            .img_wrap{
+                display: inline-block;
+                width: 15%;
+                a{
+                    img{
+                        width: 11vw;
+                        height: auto;
+                    }
+                }
+            }
+            // 헤더 오른쪽 대메뉴
+            .sub_manu{
+                float: right;
+                color : $white;
+                font-size: 45px;
+                display: $d_ib;
+                list-style: $none_style;
+                
+                
+                .sub_manu_1{margin-right:50px;}
+                .sub_manu_2{margin-right:50px;}
+                .hover_event{
+                    text-transform:uppercase;
+                }
+                
+                li{
+                    float: left;
+                    a{ text-decoration: none; color:$white;}
+                    ul{
+                        display: $none_style;
+                        position: absolute;
+                        width: 150px;
+                        // 소메뉴 css
+                        a{
+                            text-decoration: none;
+                            color: $white;
+
+                            li{
+                                position: relative;
+                                top: 15px;
+                                width: 180px;
+                                height: 50px;
+                                margin-left: -25px;
+                                line-height: 52px;
+                                list-style: none;
+                                text-align: center;
+                                float: left;
+                                font-size: 0.4em;
+                                font-weight: 200;
+                                background-color: #82638d;
+                                border: 0.1px solid $white;
+                                font-family: $ndicB;
+                            }
+                        }
+                        a:hover{
+                            color: #82638d;
+                            li{
+                                background-color: $white;
+                                font-weight: 800;
+                                text-shadow: $none_style;
+                            }
+                        }
+                    }
+                }
+            }
+            // 호버했을 때 css
+            .sub_manu_title:hover{
+                cursor: pointer;
+                text-shadow: 2px 2px #4e3358;
+                padding-bottom: 4px;
+                border-bottom: 5px solid $white;
+                .sub_sub_manu{
+                    display: block;
+                }
+            }  
+        }    
+    }
+}
+
+.sub_title{
+    font-family: $ndicB;
+    font-size: 70px;
+    width: 500px;
+    height: 80px;
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    margin-left: -250px;
+    color: white;
+    text-align: center;
+    line-height: 78px;
+}

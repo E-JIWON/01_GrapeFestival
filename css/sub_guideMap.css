@@ -1,0 +1,320 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid black;*/
+}
+
+.totalArea {
+  margin: 8vw 10%;
+  font-family: NamugulimR;
+
+}
+.orangeBack {
+  background-color: #f5cd6e; }
+
+.orangeBack_deep {
+  background-color: #e7750f; }
+
+.purpleBack {
+  background-color: #c6b8c9; }
+
+.purpleBack_deep {
+  background-color: #8e44ad; }
+
+.guideMapArea {
+  width: 100%;
+  padding-bottom: 70%;
+  position: relative;
+  background-image: url("../img/sub_guideMap_img/행사배치도.png");
+  background-repeat: no-repeat;
+  background-size: contain; 
+}
+  .posiImg {
+    width: 13%;
+  }
+  .posiImg:hover {
+    width: 23%;
+    transition: all 0.5s;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    /* transition-timing-function: ease; */
+    transition-delay: 0s;
+  }
+    .posiImg img {
+      width: 100%;
+      margin: -4px;
+      border: #cEbEEE 2px solid;
+    }
+    .posiImg1 {
+      position: absolute;
+      top: 70.4%; left: 58.7%;
+      box-shadow: 6px 6px 15px 2px black;
+    }
+    .posiImg2 {
+      position: absolute;
+      top: 35.4%; left: 80.7%;
+      box-shadow: 6px 6px 15px 2px black;
+    }
+    .posiImg2:hover{
+      top: 27%;
+    }
+    .posiImg3 {
+      position: absolute;
+      top: 41.4%; left: 50.7%;
+      box-shadow: 6px 6px 15px 2px black;
+    }
+    .posiImg4 {
+      position: absolute;
+      top: 11.4%; left: 76.7%;
+      box-shadow: 6px 6px 15px 2px black;
+    }
+    .posiImg4:hover{
+      top: 3%;
+    }
+    .posiImg5 {
+      position: absolute;
+      top: 8.4%; left: 34.7%;
+      box-shadow: 6px 6px 15px 2px black;
+    }
+    .posiImg5:hover{
+      top: 0%; left: 25%;
+    }
+    .posiImg6 {
+      position: absolute;
+      top: 14.4%; left: 3%;
+      box-shadow: 6px 6px 15px 2px black;
+    }
+    .posiImg6:hover{
+      top: 4%; left: -5%;
+    }
+    .posiImg7 {
+      position: absolute;
+      top: 40.4%; left: 4.7%;
+      box-shadow: 6px 6px 15px 2px black;
+    }
+    .posiImg7:hover{
+      top: 34.5%; left: -5%;
+    }
+    .posiImg8 {
+      position: absolute;
+      top: 72.4%; left: 22.7%;
+      box-shadow: 6px 6px 15px 2px black;
+    }
+    .posiImg8:hover{
+      left: 13%;
+    }
+/* .guideMapArea img {
+  position: absolute;
+  width: 100%; } */
+
+    .posiIcon {
+      width: 4.5%;
+      background-color: aliceblue;
+      display: inline-block;
+      border: 3.5px solid black;
+    }
+      .posiIcon img {
+        margin-top: 2%;
+        margin-left: 5%;
+        width: 90%;
+      }
+      .posiIcon1 {
+        position: absolute;
+        top: 58.4%; left: 15.7%;
+      }
+      .posiIcon1_1 {
+        position: absolute;
+        top: 21%; left: 24%;
+      }
+      .posiIcon2 {
+        position: absolute;
+        top: 33%; left: 34%;
+      }
+      .posiIcon3 {
+        position: absolute;
+        top: 83%; left: 47%;
+      }
+      .posiIcon4 {
+        position: absolute;
+        top: 61.5%; left: 84.6%;
+      }
+      .posiIcon5 {
+        position: absolute;
+        top: 53.4%; left: 35.5%;
+      }
+    .posiOrange {
+      z-index: 100;
+      width: 4%;
+      display: inline-block;
+      text-align: center;
+      border: #d1860f solid 5px;
+      background-color: #f5ab34;
+      color: white;
+      font-size: 1.5vw;
+      padding-top: 0.8%;
+      padding-bottom: 0.5%; }
+      .posiOrange1 {
+        position: absolute;
+        top: 65%; left: 55%;
+      }
+      .posiOrange2 {
+        position: absolute;
+        top: 44.5%; left: 77.5%;
+      }
+      .posiOrange3 {
+        position: absolute;
+        top: 36.2%; left: 47.4%;
+      }
+      .posiOrange4 {
+        position: absolute;
+        top: 20.2%; left: 73.8%;
+      }
+    .posiPurple {
+      z-index: 100;
+      width: 4%;
+      display: inline-block;
+      text-align: center;
+      border: #8e44ad solid 5px;
+      background-color: #ab64c8;
+      color: white;
+      font-size: 1.5vw;
+      padding-top: 0.8%;
+      padding-bottom: 0.5%; }
+      .posiPurple5 {
+        position: absolute;
+        top: 19.7%; left: 45.3%;
+      }
+      .posiPurple6 {
+        position: absolute;
+        top: 21.2%; left: 14.3%;
+      }
+      .posiPurple7 {
+        position: absolute;
+        top: 46.6%; left: 14.8%;
+      }
+      .posiPurple8 {
+        position: absolute;
+        top: 66.3%; left: 32.6%;
+      }
+.infoArea {
+  width: 100%; }
+
+    .infoPanel {
+      display: inline-block;
+      width: 34%;
+      border-radius: 5px;
+      margin-right: 2%; }
+
+    .infoTitle {
+      position: relative;
+      width: 80%;
+      line-height: 68px;
+      text-align: center;
+      color: white;
+      margin: 30px 0 8px 50%;
+      left: -40%;
+      font-size: 3vw; 
+      font-family: Paprika;
+    }
+
+    .infoDetail {
+      position: relative;
+      width: 90%;
+      left: 10%;
+      font-size: 1.5vw;
+      margin-top: 6%;
+      margin-bottom: 20%; }
+
+    .oneLine_detail {
+      position: relative;
+      margin-top: 12%;
+      width: 100%; }
+
+    .numOrange {
+      width: 10%;
+      display: inline-block;
+      text-align: center;
+      border: #d1860f solid 5px;
+      background-color: #f5ab34;
+      color: white;
+      padding-top: 1.5%; }
+
+    .infoStr {
+      display: inline-block;
+      margin-left: 8%;
+      width: 70%; }
+
+    .numPurple {
+      position: relative;
+      width: 10%;
+      display: inline-block;
+      text-align: center;
+      border: #8e44ad solid 5px;
+      background-color: #ab64c8;
+      color: white;
+      padding-top: 1.5%; }
+
+  .infoPanel_icon {
+    position: relative;
+    float: right;
+    display: inline-block;
+    background-color: #47723b;
+    width: 27%;
+    border-radius: 5px;
+    margin: -4px;
+    margin-top: 0px;
+    padding-bottom: 4.8%;
+  }
+
+    .infoDetail_icon {
+      position: relative;
+      width: 90%;
+      left: 10%;
+      font-size: 1.5vw;
+      margin-top: 6%;
+      margin-bottom: 20%; 
+    }
+
+    .oneLine_icon {
+      position: absolute;
+      display: inline-block;
+      margin-top: -80px;
+      width: 100%; }
+
+    .iconBox {
+      width: 17%;
+      background-color: aliceblue;
+      display: inline-block;
+      border: 4.5px solid black; }
+
+    .iconBox img {
+      margin-top: 2%;
+      margin-left: 5%;
+      width: 90%; }
+
+    .infoStr_icon {
+      color: white;
+      display: inline-block;
+      margin-left: 5%;
+      font-size: 1.6vw;
+      position: relative;
+      top: -0.6vw;
+    }
+
+        .infoTitle_icon {
+          position: relative;
+          width: 80%;
+          line-height: 68px;
+          color: transparent;
+          margin: 30px 0 8px 50%;
+          left: -40%;
+          font-size: 3vw; }
+        .numIcon {
+          width: 10%;
+          display: inline-block;
+          border: transparent solid 5px;
+          color: transparent;
+          padding-top: 1.5%; }

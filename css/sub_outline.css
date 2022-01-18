@@ -1,0 +1,144 @@
+*{margin : 0; padding:0;}
+		@font-face {
+ 		font-family: 'NamugodicB';
+ 	 	src: url("../ttf/210 나무고딕B.ttf");
+		}
+		@font-face{
+		font-family: 'Paprika';
+		src: url("../ttf/210 파프리카B.ttf");
+		}
+		@font-face{
+			font-family: 'NamugodicR';
+			src: url("../ttf/210 나무고딕R.ttf");
+		}
+		html body{
+			height:100%;
+		}
+		.pageArea{
+			/*width: 100%;*/
+			margin : 0px 10%;
+			padding-top:8vw;
+			padding-bottom:8vw;
+			overflow:hidden;
+		}
+		/*
+		.contentsArea{
+			height: 100%;
+			transform: translate(25%,5vw);
+			-webkit-transform: translate(0%,0vw);
+			-moz-transform: translate(25%,5vw);
+			-ms-transform: translate(25%,5vw);
+			-o-transform: translate(25%,5vw);
+		}*/
+		.leftArea{
+			height: 40vw;
+			width: 28vw;
+			display:inline-block;
+			float:left;
+		}
+		.rightArea{
+			width:50vw;
+			display:inline-block;
+			float:left;
+			/* //border:1px solid blue; */
+		}
+		.leftArea .imgArea{
+			background-image:url("../img/sub_outline_img/개요.png");
+			background-size:cover;
+			
+			width: 100%;
+			height: 100%;
+		}
+		/*
+		.imgArea{
+			//background-image:url("./개요.png");
+
+		}
+		*/
+		.rightArea > section{ 
+			height:40vw;
+			font-size:2vw;
+			/* //margin-top:250px; */
+		}
+		.text{
+			/*
+			height:300px;
+			width:700px;*/
+			position:relative;
+			top:10vw;
+			left:3vw;
+			/*top:250px;*/
+			/* //margin-left:20px;
+			//border:1px solid black;
+			//font-family:'NamugodicB'; */
+			font-family: 'NamugodicR';
+			line-height: 5vw;
+
+
+		}
+		.sponsorImg{
+			width:15vw; height:7vw;
+		/* //	margin-top:10px; 
+			margin-left:10px;*/
+		}
+		.sponsorImg:hover{
+			cursor:pointer;
+		}
+		.sponsor{
+			/*
+			width:500px; height:100px;
+			display:inline-block;
+			margin-left:100px;
+			//margin-top:100px; 
+			font-family: 'NamugodicR';
+			*/
+			position: relative;
+			top: 10vw;
+			left:8vw;
+			/*top:250px;
+			margin-left: 120px;*/
+
+		}
+		.imgTextWrap{
+			background-color:rgba(0,0,0,0.5);
+			width: 100%;
+			height: 100%;
+			text-align: center;
+		}
+		.imgText{
+			position: relative;
+			width: 100%;
+			height: 100%;
+			font-size: 4vw;
+			color: white;
+			font-family: 'Paprika';
+			top: 40%;
+			transform: translate(0, -25%);
+			/*width: 400px;
+			height:200px;
+			text-align: center;
+			font-size: 60px;
+			color: white;
+			font-family: 'Paprika';
+			position: relative;
+			top: 50%;
+			left: 50%;
+			*/
+			-webkit-transform: translate(0, -25%);
+			-moz-transform: translate(0, -25%);
+			-ms-transform: translate(0, -25%);
+			-o-transform: translate(0, -25%);
+		}
+		.title{
+			font-family:'NamugodicB';
+			/*margin-left:20px;*/
+
+		}
+		.title2{
+			font-family:'NamugodicB';
+			/*margin-left:20px;*/
+			position:relative;
+			top:15vw;
+			left:3vw;
+			/*top:300px;*/
+		}

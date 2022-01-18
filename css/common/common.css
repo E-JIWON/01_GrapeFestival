@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Paprika';
+  src: url("../../ttf/210 파프리카B.ttf");
+}
+
+@font-face {
+  font-family: 'NamugulimB';
+  src: url("../../ttf/210 나무굴림B.ttf");
+}
+
+@font-face {
+  font-family: 'NamugulimR';
+  src: url("../../ttf/210 나무굴림R.ttf");
+}
+
+@font-face {
+  font-family: 'NamugodicB';
+  src: url("../../ttf/210 나무고딕B.ttf");
+}
+
+@font-face {
+  font-family: 'NamugodicR';
+  src: url("../../ttf/210 나무고딕R.ttf");
+}
+
+.t_c {
+  text-align: center;
+}
+
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+}
+
+.d_n {
+  display: none;
+}
+
+.text_white {
+  color: #f9f2d6;
+}
+
+.mgL_150 {
+  margin-left: 150px;
+}
+
+.mgR_150 {
+  margin-right: 150px;
+}
+
+.mgR_50 {
+  margin-right: 50px;
+}
+
+.bg_white {
+  background-color: #f9f2d6;
+}
+
+address {
+  font-style: normal;
+}
+
+.no-drag {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/*# sourceMappingURL=common.css.map */

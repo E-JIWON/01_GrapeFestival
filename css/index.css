@@ -1,0 +1,594 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Paprika';
+  src: url("../../ttf/210 파프리카B.ttf");
+}
+
+@font-face {
+  font-family: 'NamugulimB';
+  src: url("../../ttf/210 나무굴림B.ttf");
+}
+
+@font-face {
+  font-family: 'NamugulimR';
+  src: url("../../ttf/210 나무굴림R.ttf");
+}
+
+@font-face {
+  font-family: 'NamugodicB';
+  src: url("../../ttf/210 나무고딕B.ttf");
+}
+
+@font-face {
+  font-family: 'NamugodicR';
+  src: url("../../ttf/210 나무고딕R.ttf");
+}
+
+.t_c {
+  text-align: center;
+}
+
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+}
+
+.d_n {
+  display: none;
+}
+
+.text_white {
+  color: #f9f2d6;
+}
+
+.mgL_150 {
+  margin-left: 150px;
+}
+
+.mgR_150 {
+  margin-right: 150px;
+}
+
+.mgR_50 {
+  margin-right: 50px;
+}
+
+.bg_white {
+  background-color: #f9f2d6;
+}
+
+address {
+  font-style: normal;
+}
+
+.no-drag {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.m_tS {
+  text-shadow: 0 0.3vw #106735;
+}
+
+.m_bS {
+  -webkit-box-shadow: 0 0.3vw #106735;
+          box-shadow: 0 0.3vw #106735;
+}
+
+.fixed_box {
+  position: fixed;
+  float: right;
+  right: 5%;
+  bottom: 0%;
+  text-align: center;
+  border: 3px solid #f9f2d6;
+  font-family: NamugodicB;
+  z-index: 1000;
+}
+
+.fixed_box a {
+  width: 150px;
+  height: 3em;
+  line-height: 2.9em;
+  font-size: 2em;
+  display: block;
+  text-decoration: none;
+  color: #f9f2d6;
+  background-color: #106735;
+}
+
+.fixed_box a:hover {
+  background-color: #f9f2d6;
+  color: #5b914e;
+}
+
+.fixed_box .event_counter {
+  width: 150px;
+  height: 5em;
+  font-size: 1.2em;
+  line-height: 2.4em;
+  background-color: #5b914e;
+  color: #f9f2d6;
+  text-shadow: 3px 3px #106735;
+}
+
+/* 메인 */
+.mainHeaderWrap {
+  height: 56vw;
+  width: 100%;
+  background-color: #5b914e;
+  font-family: 'Paprika';
+}
+
+.header_mu {
+  padding: 50px;
+  padding-bottom: 0px;
+}
+
+.header_mu .img_wrap {
+  display: inline-block;
+  width: 15%;
+}
+
+.header_mu .img_wrap a img {
+  width: 11vw;
+}
+
+.header_mu .sub_manu {
+  float: right;
+  color: #f9f2d6;
+  font-size: 45px;
+  display: inline-block;
+  list-style: none;
+}
+
+.header_mu .sub_manu .sub_manu_1 {
+  margin-right: 50px;
+}
+
+.header_mu .sub_manu .sub_manu_2 {
+  margin-right: 50px;
+}
+
+.header_mu .sub_manu .hover_event {
+  text-transform: uppercase;
+}
+
+.header_mu .sub_manu li {
+  float: left;
+}
+
+.header_mu .sub_manu li a {
+  text-decoration: none;
+  color: #f9f2d6;
+}
+
+.header_mu .sub_manu li ul {
+  display: none;
+  position: absolute;
+  width: 150px;
+}
+
+.header_mu .sub_manu li ul a {
+  text-decoration: none;
+  color: #f9f2d6;
+}
+
+.header_mu .sub_manu li ul a li {
+  position: relative;
+  top: 15px;
+  width: 180px;
+  height: 50px;
+  margin-left: -25px;
+  line-height: 52px;
+  list-style: none;
+  text-align: center;
+  float: left;
+  font-size: 0.4em;
+  font-weight: 200;
+  background-color: #106735;
+  border: 0.1px solid #f9f2d6;
+  font-family: NamugodicB;
+}
+
+.header_mu .sub_manu li ul a:hover {
+  color: #5b914e;
+}
+
+.header_mu .sub_manu li ul a:hover li {
+  background-color: #f9f2d6;
+  font-weight: 800;
+  text-shadow: none;
+}
+
+.header_mu .sub_manu_title:hover {
+  cursor: pointer;
+  text-shadow: 3px 4px #106735;
+  padding-bottom: 4px;
+  border-bottom: 5px solid #f9f2d6;
+}
+
+.header_mu .sub_manu_title:hover .sub_sub_manu {
+  display: block;
+}
+
+.title_1 {
+  font-size: 4vw;
+  display: block;
+}
+
+.title_2 {
+  font-size: 10vw;
+  display: block;
+}
+
+.title_3 {
+  font-size: 2.5vw;
+  display: block;
+}
+
+.count_img_wrap {
+  text-align: center;
+  height: 380px;
+}
+
+.count_img_wrap div:nth-child(1) {
+  margin-left: 10%;
+}
+
+.count_img_wrap div:nth-child(3) {
+  margin-right: 10%;
+}
+
+.count_img_wrap div {
+  width: 15vw;
+  height: 20vw;
+  border-radius: 80%;
+  text-align: center;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.count_img_wrap div img {
+  width: 12vw;
+  margin-top: 3.5vw;
+}
+
+.count_img_wrap span {
+  width: 25vw;
+  height: 10vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -12.5vw;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 8vw;
+  line-height: 9.6vw;
+  color: #f9f2d6;
+  border-radius: 2vw;
+  background-color: rgba(16, 103, 53, 0.4);
+  -webkit-border-radius: 2vw;
+  -moz-border-radius: 2vw;
+  -ms-border-radius: 2vw;
+  -o-border-radius: 2vw;
+}
+
+.hi_grape_wrap {
+  width: 100%;
+  height: 23vw;
+  background-color: #ead371;
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+}
+
+.hi_grape_wrap .hi_grape_pos section {
+  margin-left: 10%;
+  width: 50%;
+  float: left;
+}
+
+.hi_grape_wrap .hi_grape_pos section h1 {
+  font-family: "Paprika";
+  color: #333333;
+  text-shadow: 5px 5px #f9f2d6;
+  font-size: 6vw;
+  margin-bottom: 4vw;
+}
+
+.hi_grape_wrap .hi_grape_pos section p {
+  font-family: "NamugodicR";
+  color: #333333;
+  font-size: 1.4vw;
+  line-height: 3vw;
+}
+
+.hi_grape_wrap .hi_grape_pos section p span {
+  font-family: "NamugodicB";
+  font-size: 1.5em;
+  text-shadow: 2px 2px rgba(66, 66, 66, 0.4);
+}
+
+.hi_grape_wrap .hi_grape_pos section p .pu {
+  color: #8E44AD;
+}
+
+.hi_grape_wrap .hi_grape_pos section p .gr {
+  color: #007213;
+}
+
+.hi_grape_wrap .hi_grape_pos section p .bl {
+  color: #3498DB;
+}
+
+.hi_grape_wrap .hi_grape_pos img {
+  width: 30%;
+  margin-right: 10%;
+}
+
+.together_program_wrap {
+  font-family: "NamugodicB";
+  width: 100%;
+  height: 30vw;
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+  background-color: #f9f2d6;
+}
+
+.together_program_wrap section h1 {
+  font-family: "Paprika";
+  color: #333333;
+  font-size: 6vw;
+  margin-bottom: 65px;
+  text-shadow: 3px 3px #9C7DB8;
+}
+
+.together_program_wrap section .together_program {
+  top: 0%;
+}
+
+.together_program_wrap section .together_program div {
+  width: 36vw;
+  height: 18vw;
+  background-color: rgba(91, 145, 78, 0.4);
+  display: inline-block;
+  text-align: left;
+  padding: 1.5vw;
+}
+
+.together_program_wrap section .together_program div h3 {
+  font-family: "Paprika";
+  font-size: 3.5vw;
+  color: #106735;
+  display: inline-block;
+  margin-top: 0.4vw;
+  margin-left: 0.4vw;
+}
+
+.together_program_wrap section .together_program div img {
+  width: 15vw;
+  height: auto;
+}
+
+.together_program_wrap section .together_program div span, .together_program_wrap section .together_program div ion-icon {
+  font-family: "NamugulimB";
+  display: block;
+  font-size: 1.5vw;
+  margin-top: 2vw;
+  margin-left: 0.4vw;
+}
+
+.together_program_wrap section .together_program div .title_info {
+  font-family: "NamugulimR";
+  font-size: 1.2vw;
+  font-weight: 500;
+  margin-top: 0.4vw;
+}
+
+.together_program_wrap section .together_program div .arrow_Text {
+  font-family: "NamugodicB";
+  font-size: 2vw;
+  margin-top: 5vw;
+  color: #106735;
+  text-shadow: 2px 2px #f9f2d6;
+}
+
+.together_program_wrap section .together_program div ion-icon {
+  font-family: "NamugodicB";
+  font-size: 2vw;
+  margin-top: 0px;
+  color: #106735;
+}
+
+.together_program_wrap section .together_program div .arrowIcon_right {
+  float: right;
+  text-align: right;
+}
+
+.together_program_wrap section .together_program div:first-child {
+  text-align: left;
+  float: left;
+  margin-left: 10%;
+}
+
+.together_program_wrap section .together_program div:first-child img {
+  float: right;
+}
+
+.together_program_wrap section .together_program div:last-child {
+  text-align: right;
+  float: right;
+  margin-right: 10%;
+}
+
+.together_program_wrap section .together_program div:last-child img {
+  float: left;
+  margin-top: 1.5vw;
+}
+
+.together_program_wrap section .together_program div:hover {
+  cursor: pointer;
+  background-color: rgba(91, 145, 78, 0.8);
+}
+
+.together_program_wrap section .together_program div:hover:first-child {
+  -webkit-box-shadow: -4px 5px #106735;
+          box-shadow: -4px 5px #106735;
+}
+
+.together_program_wrap section .together_program div:hover:first-child h3 {
+  text-shadow: -2px 2px #f9f2d6;
+}
+
+.together_program_wrap section .together_program div:hover:last-child {
+  -webkit-box-shadow: 4px 5px #106735;
+          box-shadow: 4px 5px #106735;
+}
+
+.together_program_wrap section .together_program div:hover:last-child h3 {
+  text-shadow: 2px 2px #f9f2d6;
+}
+
+.program_calendar_wrap {
+  width: 100%;
+  height: 478px;
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+  background-color: #106735;
+}
+
+.program_calendar_wrap section {
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+}
+
+.program_calendar_wrap section h1 {
+  font-family: "Paprika";
+  color: #f9f2d6;
+  font-size: 6vw;
+  margin-bottom: 65px;
+  text-shadow: 3px 3px #5b914e;
+}
+
+.program_calendar_wrap section .festival_day {
+  float: left;
+  width: 10vw;
+  font-family: "NamugodicB";
+  font-size: 1.3vw;
+  color: #f9f2d6;
+  list-style: none;
+  text-align: center;
+  line-height: 80px;
+  margin-right: 100px;
+  cursor: pointer;
+}
+
+.program_calendar_wrap section .festival_day .activeBtn {
+  text-shadow: 1px 1px #5b914e;
+  font-size: 1.5vw;
+  -webkit-text-decoration: underline wavy;
+          text-decoration: underline wavy;
+  text-underline-position: under;
+}
+
+.program_calendar_wrap section .festival_time {
+  width: 20vw;
+  float: left;
+  font-family: "NamugulimR";
+  color: #f9f2d6;
+  font-size: 1.3vw;
+  list-style: none;
+  text-align: left;
+  line-height: 80px;
+}
+
+.main_gallery_wrap {
+  width: 100%;
+  height: 634px;
+  background-color: #ead371;
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+}
+
+.main_gallery_wrap .main_gallery_position h1 {
+  font-family: "Paprika";
+  color: #106735;
+  text-shadow: 5px 5px #f9f2d6;
+  font-size: 6vw;
+  margin-bottom: 65px;
+}
+
+.main_gallery_wrap .main_gallery_position .main_gallery {
+  width: 60vw;
+  position: absolute;
+  transform: translate(39%, 0);
+  -webkit-transform: translate(39%, 0);
+  -moz-transform: translate(39%, 0);
+  -ms-transform: translate(39%, 0);
+  -o-transform: translate(39%, 0);
+}
+
+.main_gallery_wrap .main_gallery_position .main_gallery .gallery_box {
+  width: 12vw;
+  float: left;
+  overflow: hidden;
+  padding: 8px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main_gallery_wrap .main_gallery_position .main_gallery .gallery_box img {
+  width: 200%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main_gallery_wrap .main_gallery_position .main_gallery .gallery_box span {
+  font-family: "NamugulimR";
+  color: #333333;
+  display: block;
+  font-size: 1.25rem;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.main_gallery_wrap .main_gallery_position .main_gallery .gallery_box:hover {
+  cursor: pointer;
+  width: 15vw;
+}
+
+.main_gallery_wrap .main_gallery_position .main_gallery .gallery_box:hover img {
+  width: 100%;
+  height: 400px;
+  -webkit-box-shadow: 0px 0px 0px 7px #106735;
+          box-shadow: 0px 0px 0px 7px #106735;
+}
+
+.main_gallery_wrap .main_gallery_position .main_gallery .gallery_box:hover span {
+  color: #106735;
+}
+/*# sourceMappingURL=index.css.map */

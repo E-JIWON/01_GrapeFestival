@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<!<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+		<link rel="stylesheet" href="css/sub_guideMap.css">
+		<link rel="stylesheet" href="css/common/header.css">
+		<link rel="stylesheet" href="css/common/footer.css">
+		<link rel="stylesheet" href="css/common/fixed.css">
+		<style>
+			header{ background-image: url(./img/sub_header/축제배치도.jpg); }
+		</style>
+		<title>포도 축제 배치도 페이지</title>
+	</head>
+	<body>
+	<p class="sub_title">축제 배치도</p>
+	<section class="totalArea">
+	        <section id="guideMapArea" class="guideMapArea">
+				<!-- <img src="img/sub_guideMap_img/행사배치도.png"/> -->
+				<div class="posiIcon posiIcon1"><img src="img/sub_guideMap_img/toilet.png"/></div>
+				<div class="posiIcon posiIcon1_1"><img src="img/sub_guideMap_img/toilet.png"/></div>
+				<div class="posiIcon posiIcon2"><img src="img/sub_guideMap_img/smoke.png"/></div>
+				<div class="posiIcon posiIcon3"><img src="img/sub_guideMap_img/parking.png"/></div>
+				<div class="posiIcon posiIcon4"><img src="img/sub_guideMap_img/stroller.png"/></div>
+				<div class="posiIcon posiIcon5"><img src="img/sub_guideMap_img/convenience.png"/></div>
+				<div class="posiOrange posiOrange1">1</div>
+				<div class="posiImg posiImg1"><img src="img/sub_guideMap_img/1.jpg"/></div>
+				<div class="posiOrange posiOrange2">2</div>
+				<div class="posiImg posiImg2"><img src="img/sub_guideMap_img/2.jpg"/></div>
+				<div class="posiOrange posiOrange3">3</div>
+				<div class="posiImg posiImg3"><img src="img/sub_guideMap_img/3.jpg"/></div>
+				<div class="posiOrange posiOrange4">4</div>
+				<div class="posiImg posiImg4"><img src="img/sub_guideMap_img/4.jpg"/></div>
+				<div class="posiPurple posiPurple5">5</div>
+				<div class="posiImg posiImg5"><img src="img/sub_guideMap_img/5.jpg"/></div>
+				<div class="posiPurple posiPurple6">6</div>
+				<div class="posiImg posiImg6"><img src="img/sub_guideMap_img/6.jpg"/></div>
+				<div class="posiPurple posiPurple7">7</div>
+				<div class="posiImg posiImg7"><img src="img/sub_guideMap_img/7.jpg"/></div>
+				<div class="posiPurple posiPurple8">8</div>
+				<div class="posiImg posiImg8"><img src="img/sub_guideMap_img/8.jpg"/></div>
+			</section>
+	        <section class="infoArea">
+				<div id="infoPanel1" class="infoPanel orangeBack"></div>
+				<div id="infoPanel2" class="infoPanel purpleBack"></div>
+				<div id="infoPanel3" class="infoPanel_icon"></div>
+			</section>
+	</section>
+	<script type="text/javascript" src="./js/sub_dday.js"></script>
+	<script>
+		function Info_orange(infoStr, numStr){
+			this.infoStr = infoStr;
+			this.numStr = numStr;
+			this.makeDir = function(){
+				let divStr = "";
+				 switch(this.numStr){
+				 	case 1:
+					 	divStr += "<div class='infoTitle orangeBack_deep'>";
+					 	divStr += this.infoStr;
+						divStr += "</div><div class='infoDetail'>";
+						break;
+					default:
+						divStr += "<div class='oneLine_detail'>";
+						divStr += 	"<div class='numOrange'>";
+						divStr += 	this.numStr-1;
+						divStr += 	"</div><p class='infoStr'>";
+						divStr += 	this.infoStr;
+						divStr +=	"</p></div>";
+						break;
+				 }
+				tempStr += divStr;
+			}
+		}
+		function Info_purple(infoStr, numStr){
+			this.infoStr = infoStr;
+			this.numStr = numStr;
+			this.makeDir = function(){
+				let divStr = "";
+				 switch(this.numStr){
+				 	case 1:
+					 	divStr += "<div class='infoTitle purpleBack_deep'>";
+					 	divStr += this.infoStr;
+						divStr += "</div><div class='infoDetail'>";
+						break;
+					default:
+						divStr += "<div class='oneLine_detail'>";
+						divStr += 	"<div class='numPurple'>";
+						divStr += 	this.numStr+3;
+						divStr += 	"</div><p class='infoStr'>";
+						divStr += 	this.infoStr;
+						divStr +=	"</p></div>";
+						break;
+				 }
+				tempStr += divStr;
+			}
+		}
+		function Info_icon(numStr, getInfo){
+			this.infoStr = getInfo[1];
+			this.iconImg = "img/sub_guideMap_img/" + getInfo[0];
+			this.numStr = numStr;
+			this.makeDir = function(){
+				let divStr = "";
+				let topV = count*30;
+				count++;
+				 switch(this.numStr){
+				 	case 1:
+					 	divStr += "<div class='infoTitle_icon'>1";
+						divStr += "</div><div class='infoDetail_icon'>";
+
+						divStr += "<div class='oneLine_icon' style='top: " + topV + "%;'>";
+						divStr += 	"<div class='iconBox'>";
+						divStr += 		"<img src='";
+						divStr += 			this.iconImg;
+						divStr += 		"'/>";
+						divStr += 	"</div><p class='infoStr_icon'>";
+						divStr += 	this.infoStr;
+						divStr +=	"</p></div>";
+						break;
+					default:
+						divStr += "<div class='oneLine_icon' style='top: " + topV + "%;'>";
+						divStr += 	"<div class='iconBox'>";
+						divStr += 		"<img src='";
+						divStr += 			this.iconImg;
+						divStr += 		"'/>";
+						divStr += 	"</div><p class='infoStr_icon'>";
+						divStr += 	this.infoStr;
+						divStr +=	"</p></div>";
+
+						divStr += "<div class='oneLine_detail'>";
+						divStr += 	"<div class='numIcon'>";
+						divStr += 	this.numStr-1;
+						divStr += 	"</div></div>";
+						break;
+				 }
+				tempStr += divStr;
+			}
+		}
+		let count = 0;
+		// function Info_icon(getInfo){
+		// 	this.infoStr = getInfo[1];
+		// 	this.iconImg = "img/sub_guideMap_img/" + getInfo[0];
+		// 	this.makeDir = function(){
+		// 		let divStr = "";
+		// 		divStr += "<div class='oneLine_icon'>";
+		// 		divStr += 	"<div class='iconBox'>";
+		// 		divStr += 		"<img src='";
+		// 		divStr += 			this.iconImg;
+		// 		divStr += 		"'/>";
+		// 		divStr += 	"</div><p class='infoStr_icon'>";
+		// 		divStr += 	this.infoStr;
+		// 		divStr +=	"</p></div>";
+		// 		tempStr += divStr;
+		// 	}
+		// }
+		let infoStock_orange = [
+			'여름 자연 길',
+			'하늘 분수대',
+			'옥상 전망대',
+			'포도 물 길',
+			'스탬프 찍기'
+		];
+		let infoStock_purple = [
+			'포도 체험 길',
+			'포도 따기 체험',
+			'포도 밟기',
+			'포도 먹기',
+			'스탬프 찍기'
+			];
+		let infoStock_icon = [
+			['toilet.png', '화장실'],
+			['smoke.png', '흡연장소'],
+			['parking.png', '주차장'],
+			['stroller.png', '유모차 대여소'],
+			['convenience.png', '편의점']
+		];
+		let tempArr = [];
+		let tempStr = "";
+		let i = 0;
+		while(i < infoStock_orange.length){
+			tempArr.push(Info_orange(infoStock_orange[i], i+1));
+			makeDir(tempArr[i]);
+			i++;
+		}
+		document.getElementById("infoPanel1").innerHTML += tempStr + "</div>";
+		i = 0;
+		tempArr = [];
+		tempStr = "";
+		while(i < infoStock_purple.length){
+			tempArr.push(Info_purple(infoStock_purple[i], i+1));
+			makeDir(tempArr[i]);
+			i++;
+		}
+		document.getElementById("infoPanel2").innerHTML += tempStr + "</div>";
+		i = 0;
+		tempArr = [];
+		tempStr = "";
+		while(i < infoStock_purple.length){
+			tempArr.push(Info_icon(i+1,infoStock_icon[i]));
+			makeDir(tempArr[i]);
+			i++;
+		}		
+
+		// while(i < infoStock_icon.length){
+		// 	tempArr.push(Info_icon(infoStock_icon[i]));
+		// 	makeDir(tempArr[i]);
+		// 	i++;
+		// }
+		// document.getElementById("infoPanel3").innerHTML += "<div class='infoDetail_icon'>"
+		document.getElementById("infoPanel3").innerHTML += 
+														 tempStr + "</div>";
+
+		this.addEventListener("click", function(e){
+			switch(e.target.id){
+				case "guideMapArea":
+					let x1 = event.offsetX;
+					let y1 = event.offsetY;
+					let imgX = document.getElementById("guideMapArea").clientWidth;
+					let imgY = document.getElementById("guideMapArea").clientHeight;
+					let perX = 100 * x1/imgX;
+					let perY = 100 * y1/imgY;
+					console.log("------------");
+					console.log("top: " + perY);
+					console.log("left: " + perX);
+					break;
+			}
+		});
+	</script>
+</body>
+</html>

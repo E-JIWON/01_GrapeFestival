@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Paprika';
+  src: url("../../ttf/210 파프리카B.ttf");
+}
+
+@font-face {
+  font-family: 'NamugulimB';
+  src: url("../../ttf/210 나무굴림B.ttf");
+}
+
+@font-face {
+  font-family: 'NamugulimR';
+  src: url("../../ttf/210 나무굴림R.ttf");
+}
+
+@font-face {
+  font-family: 'NamugodicB';
+  src: url("../../ttf/210 나무고딕B.ttf");
+}
+
+@font-face {
+  font-family: 'NamugodicR';
+  src: url("../../ttf/210 나무고딕R.ttf");
+}
+
+.t_c {
+  text-align: center;
+}
+
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+}
+
+.d_n {
+  display: none;
+}
+
+.text_white {
+  color: #f9f2d6;
+}
+
+.mgL_150 {
+  margin-left: 150px;
+}
+
+.mgR_150 {
+  margin-right: 150px;
+}
+
+.mgR_50 {
+  margin-right: 50px;
+}
+
+.bg_white {
+  background-color: #f9f2d6;
+}
+
+address {
+  font-style: normal;
+}
+
+.no-drag {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.popup_wrap {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10000;
+}
+
+.popup_wrap .popup_box {
+  width: 50vw;
+  height: 10vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -26vw;
+  margin-top: -5vw;
+  background-color: #f9f2d6;
+  text-align: center;
+}
+
+.popup_wrap .popup_box span {
+  font-family: "NamugodicB";
+  font-size: 2vw;
+}
+
+.popup_wrap .popup_box .close_Btn {
+  position: absolute;
+  margin-top: -3vw;
+  right: 0%;
+  color: #f9f2d6;
+  cursor: pointer;
+}
+
+.popup_wrap .popup_box .popup_con span {
+  color: #106735;
+  line-height: 9.9vw;
+}
+/*# sourceMappingURL=popup.css.map */
